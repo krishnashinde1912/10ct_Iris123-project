@@ -38,4 +38,4 @@ def data():
     return render_template("index.html",PREDICT_VALUE=iris_value)
 
 if __name__ == "__main__":
-    app.run(debug=False,host="0.0.0.0",port=8000)
+    app.run(debug=False,host=CONFIG.HOST_NAME,port=CONFIG.PORT_NUMBER)
